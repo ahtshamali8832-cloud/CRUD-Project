@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name',30);
             $table->string('father_name',30);
             $table->string('email')->unique();
-            $table->string('phone',15)->unique();
+            $table->string('phone',15);
             $table->string('class');
             $table->integer('roll_no')->unique();
             $table->timestamps();

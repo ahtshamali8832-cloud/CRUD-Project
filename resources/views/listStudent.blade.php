@@ -39,9 +39,9 @@
                         <td>{{ $user->class }}</td>
                         <td>{{ $user->roll_no }}</td>
                         <td>
-                            <a href="" class="btn" style="background-color: green">view</a>
-                            <a href="" class="btn" style="background-color: red">Delete</a>
-                            <a href="" class="btn" style="background-color: orange">Update</a>
+                            <a href="{{ route('Student.Detail',$user->id) }}" class="btn" style="background-color: green">view</a>
+                            <a href="{{ route('Student.Delete',$user->id) }}" class="btn" style="background-color: red">Delete</a>
+                            <a href="{{ route('Student.edit', $user->id) }}" class="btn" style="background-color: orange">Update</a>
                         </td>
                     </tr>
                 @endforeach
