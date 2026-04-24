@@ -1,5 +1,24 @@
-@include('header')
-    <div class="container mt-5 p-4" id="form-id">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #9cbb5f63;
+        }
+        #form-id{
+            background: darkgray;
+            border-radius: 15px;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 p-4 border rounded-4" id="form-id">
        <div class="row text-center">
             <div class="col-4">
                 <h3>Student Update</h3>

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class StudentController extends Controller
 {
-    // insert function------------------------>
+    // insert function-----------------------
     public function addStudent(Request $req)
     {
          $student = DB::table("students")
@@ -30,17 +30,18 @@ class StudentController extends Controller
     }
 
 
-// Read Function ------------------------->
+// Read Function ----------------------
     public function AllStudent()
     {
-        $alldatail = DB::table("students")->get();
+        
+        $alldatail = DB::table("students")->paginate(5);
         // return $alldatail;
         return view("listStudent",["data" => $alldatail]);
     }
     
 
 
-    // Single Student Detail ---------------------->
+    // Single Student Detail ---------------------
     public function SingleStudent($id)
     {
         $single = DB::table('students')->where('id',$id)->get();
@@ -48,7 +49,7 @@ class StudentController extends Controller
         return view('singleStudent',['data'=>$single]);
     }
 
-    // Single Record Delete Function ------------------->
+    // Single Record Delete Function -------------------
     public function StudentDelete($id){
         $delete = DB::table('students')->where('id',$id)->delete();
         if ($delete) {
@@ -67,7 +68,7 @@ class StudentController extends Controller
         return view('updateStudent',['data'=> $editpage]);
     }
 
-    // Single Record Update Function ------------>
+    // Single Record Update Function ------------
     public function updateStudent(Request $req, $id)
     {
         $update = DB::table('students')

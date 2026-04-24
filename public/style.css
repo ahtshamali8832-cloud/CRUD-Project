@@ -1,21 +1,8 @@
-
-        table{
-            margin: 25px auto;
-        }
         tbody tr:hover{
             background-color: #1e9191;
             color: white;
         }
-        button{
-            background-color: chartreuse;
-            color: wheat;
-            border-radius: 5px;
-            padding: 5px 10px;
+       body{
+            background-color: rgb(243, 237, 229);
         }
-        .btn{
-            border: 1px solid black;
-            padding: 3px 6px;
-            color: white;
-            border-radius: 10px;
-            text-decoration: none;
-        }
+        

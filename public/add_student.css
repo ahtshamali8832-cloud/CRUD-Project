@@ -6,4 +6,6 @@ body{
     background-color: rgb(223, 252, 191);
     border: 1px solid green;
     border-radius: 15px;
+    width: 70%;
+    margin: 0px auto;;
 }

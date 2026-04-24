@@ -1,5 +1,5 @@
 @include('header')
-    <div class="container mt-5 p-4" id="form-id">
+    <div class=" mt-5 py-4" id="form-id">
        <div class="row text-center">
             <div class="col-4">
                 <h3>Student Form</h3>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="col-6">
                         <label for="roll_no">Roll NO</label>
-                        <input type="text" name="roll_no" id="roll_no" class="form-control my-2" placeholder="Enter Roll Number">
+                        <input type="number" name="roll_no" id="roll_no" class="form-control my-2" placeholder="Enter Roll Number">
                     </div>
                 </div>
                 <div class="row">
